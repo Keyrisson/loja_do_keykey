@@ -1,3 +1,6 @@
+img{
+    width: 260px;
+}
 body{
     display: grid;
     grid-template-areas:
@@ -19,6 +22,7 @@ aside {
 main{
     background-color: blue;
     grid-area: corpo;
+    border: rgb(71, 71, 22) 5px solid;
 }
 footer{
     background-color: black;
