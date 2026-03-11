@@ -1,5 +1,5 @@
 img{
-    width: 260px;
+    width: 100;
 }
 body{
     display: grid;
@@ -7,25 +7,24 @@ body{
     "cabeca cabeca"
     "braco corpo"
     "peh peh";
-    grid-template-rows: 100px 500px 100px;
+    grid-template-rows: 100px auto 100px;
     grid-template-columns: 400px auto;
 }
 header {
-    background-color: yellow;
+    background-color: #1b1b1b;
     grid-area: cabeca;
 }
 aside {
-    background-color:
-    aquamarine;
+    background-color:#2b323f;;
     grid-area: braco;   
 }
 main{
-    background-color: blue;
+    background-color: #323232;
     grid-area: corpo;
-    border: rgb(71, 71, 22) 5px solid;
+    border: rgb(0, 0, 0) 5px solid;
 }
 footer{
-    background-color: black;
+    background-color: #0b0b0b;
     grid-area: peh;
 }
 @media only screen and (max-width: 850px){
@@ -56,4 +55,22 @@ footer{
         display: none;
     }
     
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    border: black 2px solid;
+    background-color: #f99a1d; 
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left ;
 }
