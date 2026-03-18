@@ -10,15 +10,18 @@ body{
     "braco corpo"
     "peh peh";
     grid-template-rows: 100px auto 100px;
-    grid-template-columns: 400px auto;
+    grid-template-columns: 200px auto;
 }
-header {
+header{
     background-color: #1b1b1b;
     grid-area: cabeca;
 }
-aside {
+aside{
     background-color:#2b323f;;
     grid-area: braco;   
+}
+.aside{
+    background-color: #2d4675;
 }
 main{
     background-color: #323232;
@@ -29,6 +32,26 @@ footer{
     background-color: #0b0b0b;
     grid-area: peh;
 }
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    border: black 2px solid;
+
+    background-color: #f99a1d; 
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left ;
+}
+
 @media only screen and (max-width: 850px){
     body{
     display: grid;
@@ -57,22 +80,4 @@ footer{
         display: none;
     }
     
-}
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px;
-    border: black 2px solid;
-    background-color: #f99a1d; 
-    width: 200px;
-    height: 300px;
-    border-radius: 5px;
-    text-align: center;
-    margin: 5px;
-}
-.mae{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left ;
 }
