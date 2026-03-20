@@ -1,0 +1,92 @@
+.letras{
+    font-size: 20px;
+    letter-spacing: 6px;text-align: center; 
+    color: #2d4675;
+}
+a {
+    color: inherit; /* Mantém a cor do texto ao redor */
+    text-decoration: none; /* Remove o sublinhado */
+}
+img{
+    height: 200px;
+    width: 200;
+    object-fit: cover;
+}
+body{
+    display: grid;
+    grid-template-areas:
+    "cabeca cabeca"
+    "braco corpo"
+    "peh peh";
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 200px auto;
+}
+header{
+    background-color: #000107;
+    grid-area: cabeca;
+}
+aside{
+    background-color:#0d1117;;
+    grid-area: braco;   
+}
+.aside{
+    background-color: #2d4675;
+}
+main{
+    background-color: #04050f;
+    grid-area: corpo;
+    border: rgb(0, 0, 0) 5px solid;
+}
+footer{
+    background-color: #0b0b0b;
+    grid-area: peh;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    border: black 2px solid;
+
+    background-color: #2d4675; 
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left ;
+}
+
+@media only screen and (max-width: 850px){
+    body{
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "braco"
+        "corpo"
+        "peh";
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-columns: auto;
+    }
+    
+
+}
+@media only screen and (max-width: 450px){
+    body{
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+    grid-template-rows: 100px 500px 100px;
+    grid-template-columns: auto;
+    }
+    aside{
+        display: none;
+    }
+    
+}
