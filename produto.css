@@ -1,3 +1,7 @@
+.asidiv{
+    width: 200px;
+    height: auto;
+}
 .galeria {
     display: flex;
     align-items: center;

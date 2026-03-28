@@ -1,18 +1,4 @@
-
-.letras{
-    font-size: 20px;
-    letter-spacing: 6px;text-align: center; 
-    color: #2d4675;
-}
-a {
-    color: inherit; 
-    text-decoration: none;
-}
-img{
-    height: 200px;
-    width: 200;
-    object-fit: cover;
-}
+/*body*/
 body{
     display: grid;
     grid-template-areas:
@@ -22,25 +8,80 @@ body{
     grid-template-rows: 100px auto 100px;
     grid-template-columns: 200px auto;
 }
+@media only screen and (max-width: 850px){
+    body{
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "braco"
+        "corpo"
+        "peh";
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-columns: auto;
+ }
+}
+@media only screen and (max-width: 450px){
+    body{
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: auto;
+    }
+    aside{
+        display: none;
+    }
+    
+}
+/*header*/
 header{
     background-color: #000107;
     grid-area: cabeca;
 }
+.headiv{
+    display: flex;
+    
+    
+}
+label{
+    justify-content: center;
+    align-items: center
+}
+.logo{
+     width: 150px;
+    height: auto;
+}
+/*aside*/
 aside{
-    background-color:#0d1117;;
+    background-color:#0d1117;
     grid-area: braco;   
 }
-.aside{
-    background-color: #2d4675;
+.asidiv{
+    width: 200px;
+    height: auto;
 }
+/*main*/
 main{
     background-color: #04050f;
     grid-area: corpo;
     border: rgb(0, 0, 0) 5px solid;
 }
-footer{
-    background-color: #0b0b0b;
-    grid-area: peh;
+.letras{
+    font-size: 20px;
+    letter-spacing: 6px;
+    text-align: center; 
+    color: #2d4675;
+}
+.a{
+    color: inherit; 
+    text-decoration: none;
+}
+img{
+    height: 200px;
+    width: 200;
+    object-fit: cover;
 }
 .card{
     display: flex;
@@ -59,35 +100,13 @@ footer{
 .mae{
     display: flex;
     flex-wrap: wrap;
-    justify-content: left ;
+    justify-content: center;
+}
+/*footer*/
+footer{
+    background-color: #0b0b0b;
+    grid-area: peh;
 }
 
-@media only screen and (max-width: 850px){
-    body{
-    display: grid;
-    grid-template-areas:
-        "cabeca"
-        "braco"
-        "corpo"
-        "peh";
-    grid-template-rows: 100px 50px auto 100px;
-    grid-template-columns: auto;
-    }
-    
 
-}
-@media only screen and (max-width: 450px){
-    body{
-    display: grid;
-    grid-template-areas:
-        "cabeca"
-        "corpo"
-        "peh";
-    grid-template-rows: 100px 500px 100px;
-    grid-template-columns: auto;
-    }
-    aside{
-        display: none;
-    }
-    
-}
+
