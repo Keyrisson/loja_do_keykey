@@ -5,7 +5,7 @@ body{
     "cabeca cabeca"
     "braco corpo"
     "peh peh";
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: 100px auto auto;
     grid-template-columns: 200px auto;
 }
 @media only screen and (max-width: 850px){
@@ -27,7 +27,7 @@ body{
         "cabeca"
         "corpo"
         "peh";
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: 100px auto auto;
     grid-template-columns: auto;
     }
     aside{
@@ -37,7 +37,7 @@ body{
 }
 /*header*/
 header{
-    background-color: #000107;
+    background-color: #000000;
     grid-area: cabeca;
 }
 .headiv{
@@ -45,10 +45,15 @@ header{
     
     
 }
-label{
-    justify-content: center;
-    align-items: center
+
+input {
+    
+    width: 1000px;      
+    height: 50px;
+
+  
 }
+
 .logo{
      width: 150px;
     height: auto;
@@ -107,6 +112,40 @@ footer{
     background-color: #0b0b0b;
     grid-area: peh;
 }
+.patrocinadores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 100px;
+}
+.patrocinador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: aliceblue;
+    
+}
+.bloconegro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+    width: 200px;
+    height: 200px;
 
+
+}
+/*SST main*/
+.sst{
+    color: aliceblue;
+    text-align: center;
+    width: 1000px;
+    border: 2px solid black;
+}
+.sst2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 
