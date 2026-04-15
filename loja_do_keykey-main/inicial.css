@@ -37,26 +37,30 @@ body{
 }
 /*header*/
 header{
-    background-color: #000000;
+    background-color: #ff6100;
     grid-area: cabeca;
 }
 .headiv{
     display: flex;
-    
-    
+
 }
 
 input {
-    
-    width: 1000px;      
+    width: 900px;      
     height: 50px;
-
-  
 }
 
 .logo{
-     width: 150px;
-    height: auto;
+    width: 200px;
+    height: 50px ;
+}
+.logn{
+    color: #000000; 
+    background-color: #ff9900;
+    border: #1b1b1b 1px solid;
+    border-radius: 20px;
+    font-size: 30px;
+
 }
 /*aside*/
 aside{
@@ -69,7 +73,7 @@ aside{
 }
 /*main*/
 main{
-    background-color: #04050f;
+    background-color: #0F0F0F;
     grid-area: corpo;
     border: rgb(0, 0, 0) 5px solid;
 }
@@ -77,9 +81,9 @@ main{
     font-size: 20px;
     letter-spacing: 6px;
     text-align: center; 
-    color: #2d4675;
+    color: #ff6100;
 }
-.a{
+a{
     color: inherit; 
     text-decoration: none;
 }
@@ -88,6 +92,11 @@ img{
     width: 200;
     object-fit: cover;
 }
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .card{
     display: flex;
     flex-direction: column;
@@ -95,18 +104,14 @@ img{
     padding: 40px;
     border: black 2px solid;
 
-    background-color: #2d4675; 
+    background-color: #ff7722; 
     width: 200px;
     height: 300px;
     border-radius: 5px;
     text-align: center;
     margin: 5px;
 }
-.mae{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 /*footer*/
 footer{
     background-color: #0b0b0b;
@@ -126,10 +131,6 @@ footer{
     
 }
 .bloconegro{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- 
     width: 200px;
     height: 200px;
 
@@ -138,7 +139,6 @@ footer{
 /*SST main*/
 .sst{
     color: aliceblue;
-    text-align: center;
     width: 1000px;
     border: 2px solid black;
 }
@@ -146,6 +146,21 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.quero_dormir_pq_ja_e_quatro_horas_da_manha{
+    display: flex;
+    justify-content: space-between;
+    
+   
+   
+    border-radius: 20px;
+    background-color: #ff7b29; 
+
+    
+}
+
+.tsst{
+    text-align: center;
 }
 
 
